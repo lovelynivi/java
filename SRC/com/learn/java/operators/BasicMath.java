@@ -7,7 +7,7 @@ public class BasicMath{
  int e = v/3;
  int t= -e;
  
- //basic arithmetic dobule.
+ //basic arithmetic double.
  double mn = 1+6;
  double mi = mn*4;
  double mv = mi-3;
