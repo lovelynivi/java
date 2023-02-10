@@ -1,19 +1,28 @@
+import java.util.Scanner;
 public class GeoMetricalCalculations{
  public static void main(String[] args){
-//area of a square, rectangle and circle.
-  int r ;
+  Scanner input = new Scanner(System.in);
+//area of circle.
+  float radius ;
   double pi =3.141;
-  r = 5;
-  double cArea =pi*r*r;
+ System.out.print("Enter the value of radius of circle : ");
+  radius = input.nextFloat();
+  double cArea =pi*(radius*radius);
  
-  int w ;
-  int j = 7;
-  w = 5;
-  double rArea =w*j;
-
-  int z ;
-  z = 4;
-  double sArea =z*2*2*2*2;
+ // area of rectangle.
+ //don't give the negative numbers.
+  float width ;
+  System.out.print("Enter the value of width of rectangle : ");
+  float height = input.nextFloat();
+  System.out.print("Enter the value of hight of rectangle : ");
+  width = input.nextFloat();
+  double rArea =width*height;
+  
+// area of square.
+  float length ;//length of said.
+  System.out.print("Enter the value of length of said to square : "); 
+  length = input.nextFloat();
+  double sArea =length*length;
 
 
 System.out.println("Area of the circle: "+ cArea);
@@ -23,5 +32,8 @@ System.out.println("Area of the rectangle: "+ rArea);
 
 System.out.println("      ");
 System.out.println("Area of the square: "+ sArea);
+
+ //  the scanner close  
+   input.close();
  }
 }
